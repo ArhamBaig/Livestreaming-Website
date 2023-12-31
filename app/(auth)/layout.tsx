@@ -1,4 +1,5 @@
 import React from 'react'
+import { Logo } from './_components/logo'
 
 type Props = {
     children: React.ReactNode
@@ -6,7 +7,8 @@ type Props = {
 
 const layout = (props: Props) => {
   return (
-    <div className='bg-orange-400 h-screen w-screen'>
+    <div className='h-full flex flex-col justify-center items-center space-y-6'>
+      <Logo />
         {props.children}
     </div>
   )
