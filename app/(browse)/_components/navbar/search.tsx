@@ -15,7 +15,7 @@ const Search = () => {
     if (!value) return;
     const url = qs.stringifyUrl(
       {
-        url: "/",
+        url: "/search",
         query: { term: value },
       },
       { skipEmptyString: true }
