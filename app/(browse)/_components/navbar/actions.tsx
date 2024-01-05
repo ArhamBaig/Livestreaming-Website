@@ -14,7 +14,7 @@ const Actions = async () => {
       )}
       {!!user && (
         <div className="flex items-center gap-x-4">
-          <Button >
+          <Button variant={"ghost"}>
             <Link href={`/u/${user.username}`} className="flex">
               <Clapperboard className="h-5 w-5 lg:mr-2"/>
               <span className="hidden lg:block">Dashboard</span>
