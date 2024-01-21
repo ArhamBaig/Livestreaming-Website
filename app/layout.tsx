@@ -5,6 +5,7 @@ import { ClerkProvider } from '@clerk/nextjs'
 const inter = Inter({ subsets: ['latin'] })
 import { dark } from '@clerk/themes'
 import { ThemeProvider } from '@/components/theme-provider'
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -20,6 +21,7 @@ export default function RootLayout({
     <ClerkProvider appearance={{baseTheme:dark}}>
     <html lang="en">
       <body className={inter.className}>
+        <Toaster />
         <ThemeProvider
         attribute='class' forcedTheme='dark' storageKey='livecord-theme'>
         {children}

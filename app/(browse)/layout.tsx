@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import Navbar from "./_components/navbar";
 import Sidebar, { SidebarSkeleton } from "./_components/sidebar";
 import Container from "./_components/container";
+import { Toaster } from "sonner";
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>

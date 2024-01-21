@@ -5,7 +5,6 @@ export const getRecommended = async () => {
   let userId;
   try {
     const self = await getSelf();
-  console.log(self)
 
     userId = self.id;
   } catch {
